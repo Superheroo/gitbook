@@ -1,0 +1,766 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book 每天进步一点点 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>flex弹性盒子布局 | 每天进步一点点</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-yahei/yahei.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-ace/ace.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-emphasize/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../lyc/css/JavaScript.html" />
+    
+    
+    <link rel="prev" href="../../lyc/css/css属性大全.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="2.7"
+        data-chapter-title="flex弹性盒子布局"
+        data-filepath="lyc/css/flex布局.md"
+        data-basepath="../.."
+        data-revision="Fri Mar 02 2018 00:23:57 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="lyc/css/HTML.html">
+            
+                
+                    <a href="../../lyc/css/HTML.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        HTML
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="lyc/css/热区.html">
+            
+                
+                    <a href="../../lyc/css/热区.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        热区
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="lyc/css/语义化.html">
+            
+                
+                    <a href="../../lyc/css/语义化.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        语义化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="lyc/css/c.html">
+            
+            <span><b>1.3.</b> example 3</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="lyc/css/CSS.html">
+            
+                
+                    <a href="../../lyc/css/CSS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        CSS
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="lyc/css/伪类画三角形.html">
+            
+                
+                    <a href="../../lyc/css/伪类画三角形.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        伪类画三角形
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="lyc/css/CSS选择符.html">
+            
+                
+                    <a href="../../lyc/css/CSS选择符.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        CSS选择符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="lyc/css/盒子模型.html">
+            
+                
+                    <a href="../../lyc/css/盒子模型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        盒子模型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="lyc/css/position定位.html">
+            
+                
+                    <a href="../../lyc/css/position定位.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        position定位
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="lyc/css/mouseover_big.html">
+            
+                
+                    <a href="../../lyc/css/mouseover_big.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        transform,transtion,animation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="lyc/css/css属性大全.html">
+            
+                
+                    <a href="../../lyc/css/css属性大全.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        css属性大全
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.7" data-path="lyc/css/flex布局.html">
+            
+                
+                    <a href="../../lyc/css/flex布局.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        flex弹性盒子布局
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="lyc/css/JavaScript.html">
+            
+                
+                    <a href="../../lyc/css/JavaScript.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        JavaScript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="lyc/css/arry.html">
+            
+                
+                    <a href="../../lyc/css/arry.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        数组属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="lyc/css/ajax.html">
+            
+                
+                    <a href="../../lyc/css/ajax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        ajax
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="lyc/css/jQuery.html">
+            
+                
+                    <a href="../../lyc/css/jQuery.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        jQuery
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="lyc/css/图片循环播放.html">
+            
+                
+                    <a href="../../lyc/css/图片循环播放.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        图片循环播放
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="lyc/css/插件的使用.html">
+            
+                
+                    <a href="../../lyc/css/插件的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        插件的使用
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="lyc/css/bootstrap.html">
+            
+                
+                    <a href="../../lyc/css/bootstrap.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        bootstrap的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="lyc/css/gulp使用.html">
+            
+                
+                    <a href="../../lyc/css/gulp使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        gulp的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="lyc/css/fullpage使用.html">
+            
+                
+                    <a href="../../lyc/css/fullpage使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        fullpage的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="lyc/css/swiper.html">
+            
+                
+                    <a href="../../lyc/css/swiper.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        swiper
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="lyc/css/vue首页.html">
+            
+                
+                    <a href="../../lyc/css/vue首页.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Vue
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="lyc/css/脚手架.html">
+            
+                
+                    <a href="../../lyc/css/脚手架.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.1.</b>
+                        
+                        Vue脚手架
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.2" data-path="lyc/css/VUE.html">
+            
+                
+                    <a href="../../lyc/css/VUE.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.2.</b>
+                        
+                        Vue的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3" data-path="lyc/css/vue开发的那些事.html">
+            
+                
+                    <a href="../../lyc/css/vue开发的那些事.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.3.</b>
+                        
+                        vue文件配置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="lyc/css/工具安装.html">
+            
+                
+                    <a href="../../lyc/css/工具安装.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        工具安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="lyc/css/微信.html">
+            
+                
+                    <a href="../../lyc/css/微信.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        微信
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="lyc/css/微信小程序.html">
+            
+                
+                    <a href="../../lyc/css/微信小程序.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        微信插件的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="lyc/css/微信公众平台.html">
+            
+                
+                    <a href="../../lyc/css/微信公众平台.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        微信公众平台
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="lyc/css/面试.html">
+            
+                
+                    <a href="../../lyc/css/面试.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        面试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="lyc/css/编译器.html">
+            
+                
+                    <a href="../../lyc/css/编译器.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        编译器
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >每天进步一点点</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p><strong>&#x4EC0;&#x4E48;&#x662F;&#x6587;&#x6863;&#x6D41;&#xFF1F;</strong></p>
+<p>&#x6240;&#x8C13;&#x7684;&#x6587;&#x6863;&#x6D41;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&quot;&#x4ECE;&#x4E0A;&#x5F80;&#x4E0B;&#xFF0C;&#x4ECE;&#x5DE6;&#x5F80;&#x53F3;&quot;&#x7684;&#x5E03;&#x5C40;&#x987A;&#x5E8F;&#xFF0C;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x72EC;&#x5360;&#x4E00;&#x884C;&#xFF0C;&#x884C;&#x5185;&#x5143;&#x7D20;&#x5171;&#x7528;&#x4E00;&#x884C;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5BBD;&#x9AD8;&#xFF0C;&#x6765;&#x5F53;&#x4F5C;&#x5E03;&#x5C40;&#x7684;&#x5916;&#x5C42;&#x5BB9;&#x5668;&#xFF0C;&#x884C;&#x5185;&#x5143;&#x7D20;&#x5219;&#x662F;&#x5C55;&#x73B0;&#x5185;&#x5BB9;&#x3002;</p>
+<p><strong>&#x5F53;&#x7528;&#x5230;&#x5F39;&#x6027;&#x5E03;&#x5C40;&#x540E;,&#x610F;&#x5473;&#x7740;&#x81EA;&#x8EAB;float,clear vertical-align&#x90FD;&#x4F1A;&#x5931;&#x6548;</strong></p>
+<p>&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x7684;&#x5C5E;&#x6027;&#x5206;&#x4E3A;&#x4E24;&#x5927;&#x7C7B;&#xFF0C;&#x4E00;&#x662F;&#x52A0;&#x7ED9;Flex&#x5BB9;&#x5668;(Flexcontainer)&#xFF0C;&#x4E8C;&#x662F;&#x52A0;&#x7ED9;Flex&#x9879;&#x76EE;(Flexitems)&#x3002;</p>
+<blockquote>
+<h4 id="1&#x5185;&#x5BB9;&#x6392;&#x5217;&#x987A;&#x5E8F;displayflexdirectionflexwrapflexfloworder">1.&#x5185;&#x5BB9;&#x6392;&#x5217;&#x987A;&#x5E8F;(<code>display</code>,<code>flex-direction</code>,<code>flex-wrap</code>,<code>flex-flow</code>,<code>order</code>)</h4>
+</blockquote>
+<p>display:flex &#x8BBE;&#x7F6E;&#x4E3A;&#x5F39;&#x6027;&#x5E03;&#x5C40;    </p>
+<p>display:inline-flex</p>
+<p>display:flex&#x7C7B;&#x4F3C;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#xFF0C;display:inline-flex&#x7C7B;&#x4F3C;&#x884C;&#x5185;&#x5757;&#x7EA7;&#x5143;&#x7D20;,&#x51B3;&#x5B9A;&#x4F60;&#x7684;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x662F;&#x5426;&#x72EC;&#x5360;&#x4E00;&#x884C;</p>
+<p><strong>flex-direction (&#x5185;&#x5BB9;&#x5728;&#x4E3B;&#x8F74;&#x4E0A;&#x6392;&#x5217;&#x65B9;&#x5411;)</strong></p>
+<ul>
+<li>row(&#x4ECE;&#x5DE6;&#x5F80;&#x53F3;)</li>
+<li>row-reverse(&#x4ECE;&#x53F3;&#x5F80;&#x5DE6;)</li>
+<li>column(&#x4ECE;&#x4E0A;&#x5230;&#x4E0B;)</li>
+<li>column-reverse(&#x4ECE;&#x4E0B;&#x5230;&#x4E0A;)</li>
+</ul>
+<p><strong>flex-wrap(&#x5185;&#x5BB9;&#x662F;&#x5426;&#x6362;&#x884C;)</strong></p>
+<ul>
+<li>nowarp(&#x5F3A;&#x5236;&#x4E0D;&#x6362;&#x884C;)</li>
+<li>wrap(&#x6362;&#x884C;&#xFF0C;&#x7B2C;&#x4E00;&#x884C;&#x5728;&#x9876;&#x7AEF;)</li>
+<li>wrap-reverse(&#x6362;&#x884C;,&#x7B2C;&#x4E00;&#x884C;&#x5728;&#x5E95;&#x90E8;)</li>
+</ul>
+<p><strong>flex-flow(flex-direction&#x548C;flew-warp&#x7B80;&#x5199;)</strong></p>
+<ul>
+<li>row nowrap(&#x4ECE;&#x5DE6;&#x5F80;&#x53F3;&#xFF0C;&#x4E0D;&#x6362;&#x884C;)</li>
+<li>column-reverse(&#x4ECE;&#x4E0B;&#x5230;&#x4E0A;)</li>
+<li>column wrap(&#x4ECE;&#x4E0A;&#x5230;&#x4E0B;&#xFF0C;&#x6362;&#x884C;)</li>
+<li>row-reverse wrap-reverse()</li>
+</ul>
+<p><strong>order(&#x76D2;&#x5B50;&#x6392;&#x5217;&#x987A;&#x5E8F;)</strong></p>
+<blockquote>
+<p> &#x6570;&#x503C;&#x8D8A;&#x5C0F;&#xFF0C;&#x6392;&#x5217;&#x4F4D;&#x7F6E;&#x8D8A;&#x524D;&#x652F;&#x6301;&#x6B63;&#xFF0C;&#x8D1F;&#x6574;&#x5F62;&#x6570;&#x503C;(integer)</p>
+<p>&#x5982;&#x679C;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x7684;order&#x5C5E;&#x6027;&#x90FD;&#x4E3A;1&#xFF0C;&#x5219;&#x5B83;&#x4EEC;&#x5C06;&#x6309;&#x539F;&#x6765;&#x987A;&#x5E8F;&#x6392;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5185;&#x5BB9;&#x7684;order&#x5C5E;&#x6027;&#x4E3A;2&#xFF0C;&#x5176;&#x4ED6;&#x9879;&#x76EE;&#x90FD;&#x4E3A;1&#xFF0C;&#x5219;&#x524D;&#x8005;&#x6392;&#x5217;&#x7684;&#x4F4D;&#x7F6E;&#x6700;&#x540E;&#x3002;</p>
+<h4 id="2&#x5185;&#x5BB9;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;justifycontentalignitemsalignselfaligncontent">2.&#x5185;&#x5BB9;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;(justify-content,align-items,align-self,align-content)</h4>
+</blockquote>
+<p>&#x200B;    <strong>justify-content(&#x6587;&#x672C;&#x6C34;&#x5E73;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;)</strong></p>
+<ul>
+<li>flex-start&#x5DE6;&#x5BF9;&#x9F50;</li>
+<li>flex-end &#x53F3;&#x5BF9;&#x9F50;</li>
+<li>center &#x5C45;&#x4E2D;&#x5BF9;&#x9F50;</li>
+<li>space-between &#x4E24;&#x7AEF;&#x5BF9;&#x9F50;</li>
+<li>space-around &#x5E73;&#x5747;&#x5206;&#xFF0C;&#x4E24;&#x7AEF;&#x7559;&#x6709;&#x7A7A;&#x9699;</li>
+</ul>
+<p>&#x200B;     <strong>align-items(&#x526F;&#x8F74;(&#x5782;&#x76F4;&#x65B9;&#x5411;)&#x4E0A;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;)</strong></p>
+<ul>
+<li>flex-start&#x5BB9;&#x5668;&#x5F00;&#x5934;(&#x5DE6;&#x5BF9;&#x9F50;) </li>
+<li>flex-end &#x5BB9;&#x5668;&#x7ED3;&#x5C3E;(&#x53F3;&#x5BF9;&#x9F50;)</li>
+<li>center &#x5BB9;&#x5668;&#x4E2D;&#x5FC3;(&#x5C45;&#x4E2D;)</li>
+<li>baseline &#x5BB9;&#x5668;&#x57FA;&#x7EBF;&#x4E0A;</li>
+<li>stretch &#x62C9;&#x4F38;&#x81F3;&#x586B;&#x6EE1;&#x5BB9;&#x5668;</li>
+<li>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;:stretch &#x6CE8;&#x610F;&#xFF1A;&#x7236;&#x5BB9;&#x5668;&#x7684;&#x9AD8;&#x5EA6;&#x4E0D;&#x80FD;&#x7531;&#x5185;&#x5BB9;&#x6491;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x6709;&#x4E0D;&#x8D77;&#x6548;&#x7684;&#x5047;&#x8C61;&#x3002;</li>
+</ul>
+<p>&#x200B;      <strong>align-self(&#x5355;&#x72EC;&#x8C03;&#x6574;&#x5185;&#x5BB9;&#x5728;&#x526F;&#x8F74;&#x4E0A;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;)</strong></p>
+<ul>
+<li>flex-start&#x5BB9;&#x5668;&#x5F00;&#x5934;(&#x5DE6;&#x5BF9;&#x9F50;)</li>
+<li>flex-end &#x5BB9;&#x5668;&#x7ED3;&#x5C3E;(&#x53F3;&#x5BF9;&#x9F50;)center &#x5BB9;&#x5668;&#x4E2D;&#x5FC3;(&#x5C45;&#x4E2D;)</li>
+</ul>
+<p>baseline &#x5BB9;&#x5668;&#x57FA;&#x7EBF;&#x4E0A;
+stretch &#x62C9;&#x4F38;&#x81F3;&#x586B;&#x6EE1;&#x5BB9;&#x5668;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../lyc/css/css属性大全.html" class="navigation navigation-prev " aria-label="Previous page: css属性大全"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../lyc/css/JavaScript.html" class="navigation navigation-next " aria-label="Next page: JavaScript"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-ace/ace/ace.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-ace/ace.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"search":{"maxIndexSize":1000000},"toggle-chapters":{},"yahei":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mdinhtml":{},"ace":{},"emphasize":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlight":{},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book 每天进步一点点 -->
+</html>
